@@ -95,9 +95,21 @@ Durante el desarrollo se corrigió una extracción incorrecta del nombre:
 pertenece a la relación `player`, no al nivel principal del registro. También se
 ajustó el formato de fechas para visualizarlo correctamente en Numbers.
 
-El contraste documentado con fuentes oficiales del club y las comprobaciones
-específicas de contratos siguen pendientes. Los ajustes manuales guardados en
-Numbers no forman parte de la exportación automática de Python.
+Los ajustes manuales guardados en Numbers no forman parte de la exportación
+automática de Python.
+
+## Validación manual con la fuente oficial
+
+Se realizó un contraste visual de los nombres y dorsales recibidos de Sportmonks
+con la
+[plantilla publicada en la web oficial del Celtic](https://www.celticfc.com/teams/).
+Esta revisión permite comprobar la correspondencia de esos campos en el momento
+de la consulta.
+
+La revisión es manual y se limita a los campos comparados. Las fechas de
+nacimiento y de finalización del contrato no se han contrastado de forma
+independiente. La comprobación de los contratos requiere evidencia específica,
+como anuncios oficiales de fichajes o renovaciones.
 
 ## Estructura del proyecto
 
@@ -222,7 +234,8 @@ ni validan los hechos deportivos.
 
 ## Próximos pasos
 
-- Documentar el contraste de la plantilla con la fuente oficial del club.
+- Repetir el contraste de la plantilla en nuevas consultas y registrar las
+  posibles discrepancias con la fuente oficial del club.
 - Verificar una muestra de contratos con anuncios oficiales y registrar las
   discrepancias y la precisión de la evidencia.
 - Evaluar las ampliaciones de campos según las búsquedas que deban resolverse.
