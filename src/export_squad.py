@@ -140,6 +140,7 @@ with pd.ExcelWriter(
             cell.number_format = "yyyy-mm-dd"
 
     worksheet.column_dimensions["A"].width = 16
+    worksheet.column_dimensions["A"].hidden = True
     worksheet.column_dimensions["B"].width = 32
     worksheet.column_dimensions["C"].width = 18
     worksheet.column_dimensions["D"].width = 20
