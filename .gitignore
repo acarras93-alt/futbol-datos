@@ -1,0 +1,20 @@
+# Credenciales y configuración local
+.env
+.env.*
+!.env.example
+
+# Entornos virtuales
+.venv/
+source/
+
+# Cachés y archivos del sistema
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.pytest_cache/
+.DS_Store
+
+# Datos y resultados locales
+data/
+outputs/
+gitignore_backup/
