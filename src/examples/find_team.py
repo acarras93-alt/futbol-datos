@@ -1,3 +1,8 @@
+"""Buscar el Celtic en Sportmonks y mostrar las coincidencias recibidas.
+
+Ejemplo de consulta por nombre utilizando un token cargado localmente.
+"""
+
 import os
 from pathlib import Path
 
@@ -14,7 +19,7 @@ if not api_token:
 
 print("Token loaded locally.")
 
-url = "https://api.sportmonks.com/v3/football/leagues"
+url = "https://api.sportmonks.com/v3/football/teams/search/Celtic"
 
 headers = {
     "Authorization": api_token,
@@ -28,5 +33,5 @@ response.raise_for_status()
 
 payload = response.json()
 
-for league in payload["data"]:
-    print(league["id"], "-", league["name"])
+for team in payload["data"]:
+    print(team["id"], "-", team["name"])

@@ -1,3 +1,9 @@
+"""Consultar y mostrar la plantilla básica del Celtic en la terminal.
+
+Extrae el identificador, el nombre, el dorsal y el final de contrato
+de los registros y sus relaciones en la respuesta JSON.
+"""
+
 import os
 from pathlib import Path
 

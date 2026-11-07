@@ -1,3 +1,9 @@
+"""Consultar las competiciones accesibles mediante Sportmonks.
+
+Ejemplo inicial de autenticación local, petición HTTP y lectura del JSON.
+Muestra los identificadores y nombres recibidos.
+"""
+
 import os
 from pathlib import Path
 
@@ -14,7 +20,7 @@ if not api_token:
 
 print("Token loaded locally.")
 
-url = "https://api.sportmonks.com/v3/football/teams/search/Celtic"
+url = "https://api.sportmonks.com/v3/football/leagues"
 
 headers = {
     "Authorization": api_token,
@@ -28,5 +34,5 @@ response.raise_for_status()
 
 payload = response.json()
 
-for team in payload["data"]:
-    print(team["id"], "-", team["name"])
+for league in payload["data"]:
+    print(league["id"], "-", league["name"])

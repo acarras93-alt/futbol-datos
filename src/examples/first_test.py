@@ -1,3 +1,8 @@
+"""Practicar diccionarios y condicionales con datos ficticios de un jugador.
+
+Muestra algunos campos y comprueba si existe un representante informado.
+"""
+
 jugador = {
     "jugador_id": "DEMO-001",
     "nombre": "Jugador de ejemplo",
